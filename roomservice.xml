@@ -3,32 +3,29 @@
 
 	<remote name="zy" fetch="https://github.com/zyexro" />
 	<remote name="mindthegapps" fetch="https://gitlab.com/MindTheGapps" />
-   <!-- <remote name="LOS" fetch="https://github.com/LineageOS" /> -->
+	<remote name="LOS" fetch="https://github.com/LineageOS" />
+	<remote name="gh" fetch="https://github.com" />
 
   <!-- device tree -->
-  <project path="device/xiaomi/blossom" name="android_device_xiaomi_blossom" remote="zy" revision="sixteen" />
+  <project path="device/xiaomi/blossom" name="android_device_xiaomi_blossom" remote="zy" revision="sixteen-qpr0" />
 
   <!-- SELinux policies -->
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="zy" revision="sixteen" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="LOS" revision="23.0" />
 
   <!-- hardware supports -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="zy" revision="sixteen" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="LOS" revision="23.0" />
 
   <!-- kernel tree -->
-  <project path="device/xiaomi/blossom-kernel" name="android_device_xiaomi_blossom-kernel" remote="zy" revision="sixteen" >
+  <project path="device/xiaomi/blossom-kernel" name="android_device_xiaomi_blossom-kernel" remote="zy" revision="main" >
     <linkfile src="headers" dest="kernel/xiaomi/blossom" />
   </project>
 
   <!-- vendor tree -->
-  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="sixteen" />
+  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="sixteen-qpr0" />
 
-  <!-- Samsung NFC
-  -->
-  <remove-project path="hardware/samsung/nfc"/>
-  <project path="hardware/samsung/nfc" name="android_hardware_samsung_nfc" remote="zy" revision="sixteen" />
 
   <!-- RevampedFMRadio -->
-  <project path="packages/apps/RevampedFMRadio" name="android_packages_apps_RevampedFMRadio" remote="zy" revision="sixteen" />
+  <project path="packages/apps/RevampedFMRadio" name="iusmac/RevampedFMRadio" remote="gh" revision="mtk" />
   <remove-project path="packages/apps/FMRadio"/>
 
  <!-- GApps --> 
