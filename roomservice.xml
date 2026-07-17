@@ -31,7 +31,10 @@
   <project path="packages/apps/RevampedFMRadio" name="iusmac/RevampedFMRadio" remote="gh" revision="mtk" />
   <remove-project path="packages/apps/FMRadio"/>
 
- <!-- GApps --> 
+  <!-- GApps --> 
   <project path="vendor/gapps" name="vendor_gapps" remote="mindthegapps" revision="upsilon" />
+ 
+  <!-- Dolby Atom --> 
+  <project path="hardware/dolby" name="adi8900/hardware_dolby" remote="gh" revision="A14" />
 
 </manifest>
