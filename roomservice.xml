@@ -6,7 +6,7 @@
 	<remote name="gh" fetch="https://github.com" />
 
   <!-- device tree -->
-  <project path="device/xiaomi/blossom" name="android_device_xiaomi_blossom" remote="zy" revision="yaoyaro-14.1" />
+  <project path="device/xiaomi/blossom" name="android_device_xiaomi_blossom" remote="zy" revision="yaoyoro" />
 
   <!-- SELinux policies -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="zy" revision="yaoyaro-14.1" />
@@ -24,7 +24,7 @@
   </project>
 
   <!-- vendor tree -->
-  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="yaoyaro-14.1" />
+  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="yaoyoro" />
 
 
   <!-- RevampedFMRadio -->
