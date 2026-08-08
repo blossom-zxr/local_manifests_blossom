@@ -35,6 +35,9 @@
   <project path="vendor/gapps" name="vendor_gapps" remote="mindthegapps" revision="upsilon" />
  
   <!-- Dolby Atom --> 
-  <project path="hardware/dolby" name="adi8900/hardware_dolby" remote="gh" revision="A14" />
+  <project path="hardware/dolby" name="swiitch-OFF-Lab/hardware_dolby" remote="gh" revision="A14" />
+
+  <!-- Los Priv Keys --> 
+  <project path="vendor/lineage-priv/keys" name="ProjectMatrixx/android_vendor_lineage-priv_keys-template" remote="gh" revision="master" />
 
 </manifest>
