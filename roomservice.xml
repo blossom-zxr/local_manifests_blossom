@@ -6,26 +6,15 @@
 	<remote name="gh" fetch="https://github.com" />
 
   <!-- device tree -->
-  <project path="device/xiaomi/blossom" name="android_device_xiaomi_blossom" remote="zy" revision="yaoyoro" />
+  <project path="device/xiaomi/blossom" name="android_device_xiaomi_blossom" remote="zy" revision="lineage-21" />
 
-  <!-- SELinux policies -->
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="zy" revision="yaoyaro-14.1" />
-
-  <!-- hardware supports -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="zy" revision="yaoyoro-14.1" />
-
-  <!-- Hardware Interfaces -->
-  <remove-project path="hardware/interfaces"/>
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="zy" revision="lineage-21.0" />
-  
   <!-- kernel tree -->
   <project path="device/xiaomi/blossom-kernel" name="android_device_xiaomi_blossom-kernel" remote="zy" revision="main" >
     <linkfile src="headers" dest="kernel/xiaomi/blossom" />
   </project>
 
   <!-- vendor tree -->
-  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="yaoyoro" />
-
+  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="lineage-21" />
 
   <!-- RevampedFMRadio -->
   <project path="packages/apps/RevampedFMRadio" name="iusmac/RevampedFMRadio" remote="gh" revision="mtk" />
