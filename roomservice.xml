@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="zy" fetch="https://github.com/zyexro" />
+	<remote name="zy" fetch="https://github.com/blossom-zxr" />
+	<remote name="cr" fetch="https://github.com/crdroidandroid" />
 	<remote name="mindthegapps" fetch="https://gitlab.com/MindTheGapps" />
 	<remote name="gh" fetch="https://github.com" />
 
@@ -15,6 +16,29 @@
 
   <!-- vendor tree -->
   <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="lineage-21" />
+
+  <!-- sepolicy vnd tree -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="cr" revision="14.0" />
+
+ <!-- interfaces tree -->
+  <remove-project path="hardware/interfaces"/>
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="zy" revision="14.0" />
+
+  <!-- av tree -->
+  <remove-project path="frameworks/av"/>
+  <project path="frameworks/av" name="android_frameworks_av" remote="zy" revision="14.0" />
+
+  <!-- system sepolicy tree -->
+  <remove-project path="system/sepolicy"/>
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="zy" revision="14.0" />
+
+  <!-- bluetooth module tree -->
+  <remove-project path="packages/modules/Wifi"/>
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="zy" revision="14.0" />
+
+  <!-- wifi module tree -->
+  <remove-project path="packages/modules/Bluetooth"/>
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="zy" revision="14.0" />
 
   <!-- RevampedFMRadio -->
   <project path="packages/apps/RevampedFMRadio" name="iusmac/RevampedFMRadio" remote="gh" revision="mtk" />
